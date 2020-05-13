@@ -8,9 +8,18 @@ const Home = () => {
     <div>
       <ul class="nav">
         <li class="nav-item">
-          <button type="button" class="btn btn-danger btn-lg">
-            Doctors Entrance
-          </button>
+          <Link to="/home">
+            <button type="button" class="btn btn-danger btn-lg">
+              Home
+            </button>
+          </Link>
+        </li>
+        <li class="nav-item">
+          <Link to="/doctorsPanel">
+            <button type="button" class="btn btn-danger btn-lg">
+              Doctors Entrance
+            </button>
+          </Link>
         </li>
       </ul>
 
@@ -25,7 +34,9 @@ const Home = () => {
               recusandae enim. Voluptatem, non!
             </p>
 
-            <button className="btn btn-info">Get Appointment</button>
+            <Link to="/appointment">
+              <button className="btn btn-info">Get Appointment</button>
+            </Link>
           </div>
 
           <div className="col-md-6">
