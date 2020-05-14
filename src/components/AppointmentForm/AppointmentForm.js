@@ -34,8 +34,7 @@ const AppointmentForm = (props) => {
       action: "pending",
     };
     // console.log(appointmentDetails)
-    // single data load korte hobe
-    fetch("https://doctorsbackend.herokuapp.com/bookAppointment", {
+    fetch("http://localhost:3003/bookAppointment", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

@@ -10,7 +10,7 @@ const AllAppointmentRow = (props) => {
 
   const handlePrescription = (e) => {
     console.log(prescription);
-    fetch("https://doctorsbackend.herokuapp.com/updatePrescription", {
+    fetch("http://localhost:3003/updatePrescription", {
       method: "PUT",
       headers: {
         "Content-Type": "application/json",

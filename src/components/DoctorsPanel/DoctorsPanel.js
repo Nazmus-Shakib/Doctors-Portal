@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import { Link } from "react-router-dom";
 import Sidebar from "../Sidebar/Sidebar";
 import Dashboard from "../DashBoard/DashBoard";
+import AppointList from "../AppointList/AppointList";
 
 const DoctorsPanel = () => {
   return (
@@ -21,6 +22,14 @@ const DoctorsPanel = () => {
         <Sidebar></Sidebar>
         <Switch>
           <Route path="/doctorPanel/dashboard">
+            <Dashboard></Dashboard>
+          </Route>
+
+          <Route path="/doctorPanel/appointList">
+            <AppointList></AppointList>
+          </Route>
+
+          <Route exact path="/doctorPanel">
             <Dashboard></Dashboard>
           </Route>
         </Switch>

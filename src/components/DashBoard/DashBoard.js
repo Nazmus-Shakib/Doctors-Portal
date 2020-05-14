@@ -9,7 +9,7 @@ const Dashboard = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch("https://doctorsbackend.herokuapp.com/allAppointments")
+    fetch("http://localhost:3003/allAppointments")
       .then((res) => res.json())
       .then((data) => {
         setIsLoading(false);

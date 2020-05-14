@@ -14,6 +14,7 @@ const Home = () => {
             </button>
           </Link>
         </li>
+
         <li class="nav-item">
           <Link to="/doctorsPanel">
             <button type="button" class="btn btn-danger btn-lg">
@@ -21,6 +22,14 @@ const Home = () => {
             </button>
           </Link>
         </li>
+
+        {/* <li class="nav-item">
+          <Link to="/addData">
+            <button type="button" class="btn btn-danger btn-lg">
+              Add Data
+            </button>
+          </Link>
+        </li> */}
       </ul>
 
       <div className="homeContainer">

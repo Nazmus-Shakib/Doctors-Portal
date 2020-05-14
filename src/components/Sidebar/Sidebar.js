@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter as Router, Link, Switch, Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import BorderAllIcon from "@material-ui/icons/BorderAll";
 import SupervisorAccountIcon from "@material-ui/icons/SupervisorAccount";

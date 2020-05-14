@@ -10,8 +10,7 @@ const ServiceOptions = (props) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    //total data ekhane asbe
-    fetch("https://doctorsbackend.herokuapp.com/services")
+    fetch("http://localhost:3003/services")
       .then((res) => res.json())
       .then((data) => {
         setIsLoading(false);
