@@ -10,16 +10,19 @@ const AllAppointmentRow = (props) => {
 
   const handlePrescription = (e) => {
     console.log(prescription);
-    fetch("http://localhost:3003/updatePrescription", {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({
-        id: props.data._id,
-        prescription,
-      }),
-    }).then((res) => res.json());
+    fetch(
+      "https://doctors-portal-by-n-shakib.herokuapp.com/updatePrescription",
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          id: props.data._id,
+          prescription,
+        }),
+      }
+    ).then((res) => res.json());
     setModalIsOpen(false);
   };
 

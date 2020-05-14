@@ -3,13 +3,16 @@ import React, { useState } from "react";
 const VisitButton = (props) => {
   const [visited, setVisited] = useState(props.visited);
   const handleVisit = (id) => {
-    fetch("http://localhost:3003/dailyAppointment/updateVisit", {
-      method: "PUT",
-      headers: {
-        "Content-Type": "application/json",
-      },
-      body: JSON.stringify({ id }),
-    }).then((res) => res.json());
+    fetch(
+      "https://doctors-portal-by-n-shakib.herokuapp.com/dailyAppointment/updateVisit",
+      {
+        method: "PUT",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({ id }),
+      }
+    ).then((res) => res.json());
     setVisited(true);
   };
 

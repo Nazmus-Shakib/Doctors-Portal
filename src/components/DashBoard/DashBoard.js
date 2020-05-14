@@ -9,7 +9,7 @@ const Dashboard = () => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:3003/allAppointments")
+    fetch("https://doctors-portal-by-n-shakib.herokuapp.com/allAppointments")
       .then((res) => res.json())
       .then((data) => {
         setIsLoading(false);

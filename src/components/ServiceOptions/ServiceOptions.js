@@ -10,7 +10,7 @@ const ServiceOptions = (props) => {
   const [isLoading, setIsLoading] = useState(true);
 
   useEffect(() => {
-    fetch("http://localhost:3003/services")
+    fetch("https://doctors-portal-by-n-shakib.herokuapp.com/services")
       .then((res) => res.json())
       .then((data) => {
         setIsLoading(false);

@@ -10,7 +10,10 @@ const AppointList = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    fetch("http://localhost:3003/dailyAppointment/" + date.toDateString())
+    fetch(
+      "https://doctors-portal-by-n-shakib.herokuapp.com/dailyAppointment/" +
+        date.toDateString()
+    )
       .then((res) => res.json())
       .then((data) => {
         if (data.message) {
